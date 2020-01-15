@@ -32,6 +32,7 @@ module.exports = {
 		const headersObject = {
 			headers : {
 				...customHeaders,
+				'X-User-Agent': req.headers['user-agent'],
 				'X-Prerender' : '1'
 			}
 		};
