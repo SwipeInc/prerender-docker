@@ -11,7 +11,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "node --inspect server.js",
     "prod": "echo \"\\033[0;35mRunning with Chrome version: `cat /opt/chromeVersion`\\033[0m\" && pm2 start server.js --no-daemon --instances=1"
   },
   "license": "MIT"
