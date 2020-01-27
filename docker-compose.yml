@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  prerender_server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    privileged: true
+    environment: 
+      DISABLE_CACHE: "1"
+  nginx_proxy:
+    build:
+      context: .
+      dockerfile: Dockerfile-nginx
+    ports:
+      - 80:80      
