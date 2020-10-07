@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM 240247221724.dkr.ecr.eu-west-1.amazonaws.com/nginx_noheader:1.19.2-brotli
 
 ENV TZ Africa/Johannesburg
 
