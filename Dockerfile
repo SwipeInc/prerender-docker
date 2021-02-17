@@ -1,10 +1,9 @@
-FROM node:12
-MAINTAINER Magnet.me
+FROM node:14
 
 EXPOSE 3000
 
 # Install dumb-init to rape any Chrome zombies
-RUN wget https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64.deb
+RUN wget https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_amd64.deb
 RUN dpkg -i dumb-init_*.deb
 
 # Install Chromium.

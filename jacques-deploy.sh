@@ -1,5 +1,5 @@
 #! /bin/bash
-VERSION=2.1.0
+VERSION=2.2.0
 
 aws ecr get-login-password --region eu-west-1 --profile dstv-aws-master | docker login --username AWS --password-stdin 240247221724.dkr.ecr.eu-west-1.amazonaws.com
 

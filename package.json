@@ -5,7 +5,7 @@
   "main": "server.js",
   "dependencies": {
     "html-minifier": "^4.0.0",
-    "pm2": "^4.5.0",
+    "pm2": "^4.5.4",
     "prerender": "5.8.0",
     "prerender-aws-s3-cache": "git+https://github.com/SwipeInc/prerender-aws-s3-cache.git"
   },
